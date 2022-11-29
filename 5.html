@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0px 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 100000;
+}
+header.sticky{
+    padding: 0px 100px;
+    background: #fff;
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: rgb(170, 8, 8);
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    font-family: 'Inter', sans-serif;
+    width: 200px;
+    
+    
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    font-size: 120%;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    font-family: 'Work Sans', sans-serif;
+}
+.product_page{
+    width: 100%;
+    margin-top: 10%;
+    height: 100vh;
+    display: flex;
+
+}
+.product_img{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.img{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    background: url(/Frame\ 5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.product_info{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: 100px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    padding-right: 100px;
+}
+.product_info h3{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    margin-top: 10px;
+    
+}
+.buy_button{
+    width: 150px;
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    margin: 20px 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy_button h4{
+    color: white;
+}
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img class="logo" src="/logo.png" alt=""></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </header>
+    <section class="product_page">
+        <div class="product_img">
+            <div class="img"></div>
+        </div>
+        <div class="product_info">
+            <h3>Samsung Galaxy S22 Cell Phone</h3>
+            <h3 style="font-weight:bold">Rs.180,000</h3>
+            <div class="buy_button">
+                <h4>Buy Now</h4>
+            </div>
+            <p>
+            <br><br>8K SUPER STEADY VIDEO: Shoot videos that rival how epic your life is with stunning 8K recording, the highest
+            recording resolution available on a smartphone; Video captured is effortlessly smooth, thanks to Auto Focus Video
+            Stabilization on Galaxy S22.<br><br>
+            <br><br>NIGHTOGRAPHY plus PORTAIT MODE: Capture the night with crystal clear, bright pics and videos, no matter the
+            lighting with Night Mode; Portrait Mode auto-detects and adjusts to what you want front and center, making all your
+            photos worthy of a frame
+            <br><br>50MP PHOTO RESOLUTION plus BRIGHT DISPLAY: From elaborate landscapes to intricate creations, capture vivid
+            detail with 50MP resolution; Your favorite content will look even more epic on our brightest display ever with Vision
+            Booster
+            </p>
+        </div>
+    </section>
+    
+
+
+
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+</body>
+
+</html>

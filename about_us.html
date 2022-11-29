@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: rgb(255, 255, 255);
+            min-height: 100vh;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 87%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.6s;
+            padding: 0px 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0);
+            z-index: 100000;
+        }
+
+        header.sticky {
+            padding: 0px 100px;
+            background: #fff;
+        }
+
+        header .logo {
+            position: relative;
+            font-weight: 700;
+            color: rgb(170, 8, 8);
+            text-decoration: none;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.6s;
+            font-family: 'Inter', sans-serif;
+            width: 200px;
+
+
+        }
+
+        header ul {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header ul li {
+            position: relative;
+            list-style: none;
+        }
+
+        header ul li a {
+            font-size: 120%;
+            position: relative;
+            margin: 0 15px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            letter-spacing: 2px;
+            font-weight: 500px;
+            transition: 0.6s;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .banner{
+            width: 100%;
+            height: 30vh;
+            background: url(/gold\ white.jpg);
+            background-size: cover;
+            border-radius: 15px 50px 30px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 3em;
+        }
+        .para{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .para p{
+            margin-top: 100px;
+            width: 80%;
+            font-size: 1.7em;
+            color: rgb(51, 51, 51);
+            margin-bottom: 100px;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img class="logo" src="/logo.png" alt=""></a>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about_us.html">About Us</a></li>
+            <li><a href="/shop.html">Shop</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+
+    </header>
+    <section class="banner">
+        <div class="heading"><h1>About Us</h1></div>
+    </section>
+    <section class="para">
+        <p>O Seven Mobile Pvt. Ltd is one of the leading electronics distributors in Sri Lanka that has grown from strength to
+        strength since its establishment.
+        Incorporated in 2020, the company started with humble beginnings but with sound knowledge on the mobile phone sphere and
+        strong leadership skills, O Seven Mobile today is recognised as a strong competitor in the electronics market, having
+        started with offering mobile phones, and later accessories.<br><br>
+        O Seven Mobile is a licenced importer and distributor of electronics and has a plethora of offerings in its portfolio.
+        While in its product range are top brands, Celltronics keeps abreast with new technological developments and strives to
+        introduce the same to the local market at its earliest.
+        With the objective of making technology accessible to as many as possible, Celltronics makes available its products at
+        affordable rates, ensuring a greater proportion of the population can reap the benefits of the latest technology
+        available.
+        <br>
+        <br>
+        A key priority for Celltronics is the affordability factor, and the same is achieved without compromising quality. All
+        imported products are of the highest standard.</p>
+    </section>
+    
+
+
+
+
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+</body>
+
+</html>
